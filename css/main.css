@@ -1,0 +1,805 @@
+/* Specifications start*/
+.btn {
+	border: none;
+	cursor: pointer;
+	width: 154px;
+	line-height: 1em;
+	letter-spacing: 0.095em;
+	padding: 20px 0;
+	font-size: 16px;
+	display: block;
+	text-align: center;
+	background: #56593D;
+	color: white;
+	transition: background 0.5s ease;
+	text-transform: uppercase;
+}
+.btn:hover {
+	background: #3e4126;;
+	transition: background 0.5s ease;
+} 
+.container {
+	max-width: 1360px;
+	margin: 0 auto;
+}
+.d-flex {
+	display: flex;
+}
+.d-flex-col {
+	display: flex;
+	flex-direction: column;
+}
+.d-flex-sb {
+	display: flex;
+	justify-content: space-between;
+}
+.hide {
+	display: none;
+}
+.active {
+	display: block !important;
+}
+.link-light {
+	color: #fff;
+}
+.link-light,
+.link-dark {
+	transition: color 0.5s ease;
+}
+.link-light:hover,
+.link-dark:hover {
+	transition: color 0.5s ease;
+	color: #cbda4c;
+}
+	/* Custom Selector start*/
+	.drop-btn {
+		background-color: #fff;
+		color: #000;
+		padding: 10px 12px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 20px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+	.dropdown-content span {
+		cursor: pointer;
+		color: black;
+		padding: 10px;
+		text-decoration: none;
+		display: block;
+	}
+	.dropdown-content span:hover {
+		background-color: #FFFFEF;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.dropdown:hover .drop-btn {
+		background-color: #f9f9f9;
+	}
+	/* Custom Selector end*/
+/* Specifications end*/
+
+/* Header start */
+.header {
+	line-height: 1.54em;
+	letter-spacing: 0.097em;
+	padding: 8px 0 24px 0;
+}
+.header::before {
+	content: '';
+	display: block;
+	max-width: 1424px;
+	border-top: 16px solid #FFFFEF ;
+	margin: 0 auto 15px;
+}
+.hamburger {
+	margin: 15px 0 0 35px;
+}
+.hamburger__line {
+	width: 30px;
+	height: 3px;
+	background-color: #94942e;
+}
+.hamburger__line:not(:last-child) {
+	margin-bottom: 10px;
+}
+.options {
+	width: 509px;
+	align-items: center;
+	text-transform: uppercase;
+}
+.options__dropdown {
+	cursor: pointer;
+	padding: 16px 24px 16px 16px;
+}
+.options__dropdown_shop-box { 
+	width: 105px;
+	height: 59px;
+}
+.arrow-down {
+	width: 10px;
+	height: 8px;
+	margin: 5px 0 0 7px;
+}
+.options__links {
+	text-transform: uppercase;
+}
+.options__link:not(:last-child) {
+	margin-right: 39px;
+}
+.logo-link {
+	margin: 16px 0 0 110px;
+}
+.logo-link img {
+	width: 90px;
+	height: 26px;
+}
+.account-icons {
+	margin: 14px 39px 0 auto;
+	width: 195px;
+}
+.account-icons__icon img {
+	width: 32px;
+	height: 32px;
+}
+.account-icons__icon_cart {
+	position: relative;
+}
+.cart-count {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	bottom: 7px;
+	right: -4px;
+	line-height: 1em;
+	padding: 4px 6px 0;
+	text-align: center;
+	background-color: #FFFFEF;
+	border-radius: 50%;
+}
+/* Header end */
+
+/* Offer start */
+.offer-bg {
+	max-width: 1360px;
+	height: 732px;
+	background: url('../img/offer-bg.jpg') no-repeat center;
+	border: 16px solid #FFFFEF;
+	align-items: flex-end;
+    justify-content: flex-end;
+}
+.offer-content {
+	text-align: end;
+	margin: 0 64px 64px 0;
+}
+.offer-content__title_mini {
+	font-size: 18px;
+	margin-bottom: 10px;
+	letter-spacing: 0.09595em;
+	text-transform: uppercase;
+}
+.offer-content__title {
+	font-size: 45px;
+	margin-bottom: 25px;
+	line-height: 1.37em;
+}
+.btn_offer {
+	margin-left: auto;
+}
+/* Offer end */
+
+/* Description start */
+.description-content {
+	padding: 88px 0;
+}
+.description-content__paragraph {
+	text-align: center;
+	font-size: 57px;
+	max-width: 1200px;
+	line-height: 1.415em;
+	margin: 0 auto 26px;
+}
+.description-content__links {
+	justify-content: center;
+}
+.description-content__link {
+	letter-spacing: 0.105em;
+	line-height: 1.65em;
+	align-items: center;
+	transition: border 0.5s ease;
+	border-bottom: 2px solid #56593D;
+}
+.description-content__link:hover {
+	transition: border 0.5s ease;
+	border-bottom: 2px solid #cbda4c;
+}
+.description-content__link:not(:last-child) {
+	margin-right: 68px;
+}
+.description-content__link::after {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 11px;
+	background: url('../img/arrow-right.svg') no-repeat;
+	margin-left: 6px;
+}
+/* Description end */
+
+/* Collection start */
+.collection-content {
+	background-color: #FFFFEF;
+	padding: 64px 0;
+}
+.collection-content__title {
+	text-align: center;
+	font-size: 24px;
+	line-height: 1.355em;
+}
+.boards {
+	max-width: 1296px;
+	margin: 80px 32px 0;
+	flex-wrap: wrap;
+}
+.boards__card {
+	text-align: center;
+}
+.card__title {
+	margin: 15px 0 7px;
+	line-height: 1.35em;
+}
+.card__price {
+	line-height: 1.645em;
+	letter-spacing: 0.105em;
+}
+/* Collection end */
+
+/* Essentials start */
+.essentials-content {
+	max-width: 1360px;
+	height: 732px;
+	background: url('../img/essentials-bg.jpg') no-repeat center;
+	border: 16px solid #FFFFEF;
+	margin-top: 23px;
+	text-align: center;
+}
+.essentials-content__title {
+	text-transform: uppercase;
+	font-size: 17px;
+	letter-spacing: 0.105em;
+	line-height: 1.32em;
+	margin: 62px 0 11px;
+}
+.essentials-content__paragraph {
+	font-size: 50px;
+	text-align: center;
+	max-width: 1093px;
+	margin: 0 auto;
+	line-height: 1.205em;
+}
+/* Essentials end */
+
+/* About start */
+.about-content {
+	text-align: center;
+}
+.about-card {
+	margin-top: 24px;
+	background-color: #FFFFEF;
+	padding: 64px 32px;
+}
+.about-card__info {
+	margin: 0 auto;
+}
+.about-card__title {
+	font-size: 29px;
+	margin-top: 63px;
+	line-height: 1.35em;
+}
+.about-card__title::after {
+	content: '';
+	display: block;
+	width: 40px;
+	height: 1px;
+	background-color: #717353;
+	margin: 32px auto;
+}
+.about-card__text {
+	font-size: 20px;
+	max-width: 355px;
+	line-height: 1.625em;
+}
+.about-card__img {
+	max-width: 743px;
+}
+.about-card__img_table-time {
+	margin-left: auto;
+}
+/* About end */
+
+/* Newsletter start */
+.newsletter-content {
+	padding: 63px 0;
+	background-color: #FFFFEF;
+	margin: 40px 0;
+	text-align: center;
+}
+.newsletter-content__title {
+	font-size: 28px;
+	line-height: 1.35em;
+}
+.newsletter-content__text {
+	font-size: 17px;
+	line-height: 1.72em;
+	margin: 16px 0 32px;
+}
+.subscribe-form {
+	width: 500px;
+	margin: 0 auto;
+}
+.subscribe-email {
+	width: 340px;
+	border: none;
+	border-bottom: 1px solid #56593D;
+	background-color: transparent;
+}
+.btn_subscribe {
+	width: 144px;
+	font-size: 15px;
+	letter-spacing: 0.1105em;
+	line-height: 1.47em;
+	padding: 0;
+	margin-left: 16px;
+}
+/* Newsletter end */
+
+/* KinnMoments start */
+.kinnmoments-content {
+	background-color: #FFFFEF;
+	padding: 64px 0;
+	margin-bottom: 128px;
+}
+.kinnmoments-content__title {
+	font-size: 25px;
+	line-height: 1.33em;
+	text-align: center;
+}
+.kinnmoments-pictures {
+	max-width: 1304px;
+	margin: 39px 24px 0;
+}
+/* KinnMoments end */
+
+/* Footer start */
+.footer {
+	background-color: #717353;
+	padding: 62px 0 107px;
+	color: #fff;
+}
+.footer-data__head::after {
+	content: '';
+	display: block;
+	width: 40px;
+	height: 1px;
+	background-color: #FFFFEF;
+	margin-top: 17px;
+}
+.footer-data__head_copyright::after {
+	margin: 15px 0 17px 0;
+}
+.copyright-year {
+	line-height: 1.65em;
+}
+.copyright-name {
+	font-size: 15px;
+	line-height: 1.645em;
+}
+.footer-data__text {
+	max-width: 256px;
+	line-height: 1.59em;
+}
+.footer-data_explore {
+	margin: 0 248px 0 124px;
+}
+.footer-data__head_links {
+	font-size: 15px;
+	letter-spacing: 0.1059em;
+	line-height: 1.345em;
+	text-transform: uppercase;
+}
+.footer-data__link {
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 18px;
+	line-height: 1.65em;
+	letter-spacing: 0.0955em;
+}
+.footer-data__link_dropdown {
+	display: flex;
+}
+.footer-data__link-span span {
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+}
+.footer-data__link-span span:after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 8px;
+	background: url('../img/arrow-down.svg');
+	margin-left: 11px;
+}
+.socials {
+	margin-left: auto;
+}
+.socials__link:not(:last-child) {
+	margin-right: 19px;
+}
+/* Footer end */
+
+
+/* Responsive */
+
+/* Large devices */
+@media (max-width: 1322px) {
+	.boards__card {
+		max-width: 30%;
+	}
+	.kinnmoments-pictures {
+		max-width: 780px;
+		flex-wrap: wrap;
+		margin: 39px auto 0;
+	}
+	.kinnmoments-pictures__pic:nth-child(n + 3) {
+		margin-top: 25px;
+	}
+	.footer-content {
+		margin: 0 24px;
+	}
+}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+	.container {
+		max-width: 1140px;
+	}
+	/* Header start */
+	.menu-wrap {
+		position: relative;
+	}
+	.hamburger {
+		display: block;
+	}
+	.options {
+		flex-direction: column;
+		position: absolute;
+		width: 150px;
+		left: 35px;
+		top: 44px;
+		z-index: 1;
+		background-color: #f9f9f9;
+		display: none;
+	}
+	.options__links {
+		flex-direction: column;
+	}
+	.options__link {
+		padding: 10px;
+	}
+	.options__link:not(:last-child) {
+		margin-right: 0;
+	}
+	/* Header end */
+	
+	/* Offer start */
+	
+	/* Offer end */
+	
+	/* Description start */
+	.description-content__paragraph {
+		max-width: 960px;
+	}
+	/* Description end */
+	
+	/* Collection start */
+	/* Collection end */
+	
+	/* Essentials start */
+	/* Essentials end */
+	
+	/* About start */
+	.about-card {
+		flex-direction: column;
+		align-items: center;
+	}
+	.about-card_table-time {
+		flex-direction: column-reverse;
+	}
+	.about-card__img_table-time {
+		margin-left: 0;
+	}
+	/* About end */
+	
+	/* Newsletter start */
+	/* Newsletter end */
+	
+	/* KinnMoments start */
+	/* KinnMoments end */
+	
+	/* Footer start */
+	.footer-content {
+		justify-content: space-between;
+	}
+	.socials,
+	.footer-data_explore {
+		margin: 0;
+	}
+	/* Footer end */
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+	.container {
+		max-width: 960px;
+	}
+	/* Header start */
+	/* Header end */
+	
+	/* Offer start */
+	/* Offer end */
+	
+	/* Description start */
+	/* Description end */
+	
+	/* Collection start */
+	/* Collection end */
+	
+	/* Essentials start */
+	/* Essentials end */
+	
+	/* About start */
+	/* About end */
+	
+	/* Newsletter start */
+	/* Newsletter end */
+	
+	/* KinnMoments start */
+	.kinnmoments-pictures {
+		margin: 39px 24px 0;
+	}
+	/* KinnMoments end */
+	
+	/* Footer start */
+	/* Footer end */
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+	.container {
+		max-width: 720px;
+	}
+	/* Header start */
+	/* Header end */
+	
+	/* Offer start */
+	/* Offer end */
+	
+	/* Description start */
+	/* Description end */
+	
+	/* Collection start */
+	.boards {
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.boards__card {
+		max-width: 100%;
+		margin-top: 35px;
+	}
+	.card__img {
+		max-width: 411px;
+		margin: 0 auto;
+	}
+	/* Collection end */
+	
+	/* Essentials start */
+	/* Essentials end */
+	
+	/* About start */
+	.about-card__img {
+		max-width: 90%;
+	}
+	/* About end */
+	
+	/* Newsletter start */
+	/* Newsletter end */
+	
+	/* KinnMoments start */
+	.kinnmoments-pictures {
+		justify-content: center;
+	}
+	.kinnmoments-pictures__pic:nth-child(n + 2) {
+		margin-top: 25px;
+	}
+	/* KinnMoments end */
+	
+	/* Footer start */
+	.footer-data:not(:last-child) {
+		width: 30%;
+	}
+	.footer-content {
+		flex-wrap: wrap;
+	}
+	/* Footer end */
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.container {
+		max-width: 90%;
+	}
+	/* Header start */
+	.header-bar {
+		justify-content: space-between;
+	}
+	.options {
+		left: 0;
+	}
+	.hamburger,
+	.logo-link,
+	.account-icons {
+		margin-left: 0;
+	}
+	.account-icons {
+		margin-right: 0;
+		max-width: 145px;
+		width: 100%;
+	}
+	.account-icons a img {
+		width: 26px;
+		height: 26px;
+	}
+	/* Header end */
+	
+	/* Offer start */
+	.offer-content {
+		text-align: center;
+		margin: 0 auto 64px;
+	}
+	.btn_offer {
+		margin: 0 auto;
+	}
+	/* Offer end */
+	
+	/* Description start */
+	.description-content__links {
+		justify-content: space-between;
+	}
+	.description-content__link:not(:last-child) {
+		margin: 0;
+	}
+	.description-content__paragraph {
+		font-size: 50px;
+	}
+	/* Description end */
+	
+	/* Collection start */
+	.card__img {
+		max-width: 90%;
+	}
+	/* Collection end */
+	
+	/* Essentials start */
+	.essentials-content__paragraph {
+		font-size: 40px;
+	}
+	/* Essentials end */
+	
+	/* About start */
+	/* About end */
+	
+	/* Newsletter start */
+	.subscribe-form {
+		width: 75%;
+		flex-direction: column;
+		margin: 0 auto;
+		align-items: center;
+	}
+	.subscribe-email {
+		width: 100%;
+	}
+	.btn_subscribe {
+		margin: 15px 0 0;
+	}
+	/* Newsletter end */
+	
+	/* KinnMoments start */
+	/* KinnMoments end */
+	
+	/* Footer start */
+	.footer-data_explore,
+	.footer-data_help {
+		display: none;
+	}
+	.footer-data:not(:last-child) {
+		width: 100%;
+	}
+	.footer-data {
+		width: 100%;
+	}
+	.socials {
+		margin-top: 20px;
+	}
+	/* Footer end */
+}
+
+/* Extra tiny devices (portrait phones, less than 320px) */
+@media (max-width: 320px) {
+	.container {
+		max-width: 90%;
+	}
+	/* Header start */
+	/* Header end */
+	
+	/* Offer start */
+	/* Offer end */
+	
+	/* Description start */
+	/* Description end */
+	
+	/* Collection start */
+	/* Collection end */
+	
+	/* Essentials start */
+	/* Essentials end */
+	
+	/* About start */
+	/* About end */
+	
+	/* Newsletter start */
+	/* Newsletter end */
+	
+	/* KinnMoments start */
+	/* KinnMoments end */
+	
+	/* Footer start */
+	/* Footer end */
+}
+	/* Header start */
+	/* Header end */
+	
+	/* Offer start */
+	/* Offer end */
+	
+	/* Description start */
+	/* Description end */
+	
+	/* Collection start */
+	/* Collection end */
+	
+	/* Essentials start */
+	/* Essentials end */
+	
+	/* About start */
+	/* About end */
+	
+	/* Newsletter start */
+	/* Newsletter end */
+	
+	/* KinnMoments start */
+	/* KinnMoments end */
+	
+	/* Footer start */
+	/* Footer end */
